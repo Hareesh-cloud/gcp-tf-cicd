@@ -12,7 +12,7 @@ resource "google_cloud_run_service" "mywebapp" {
   template {
     spec {
       containers {
-        image = "gcr.io/manifest-access-320809/tomcat"
+        image = "gcr.io/$PROJECT_ID/helloworld"
       }
     }
   }
